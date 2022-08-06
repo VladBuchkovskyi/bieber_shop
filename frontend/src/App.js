@@ -1,9 +1,20 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+import HomeScreen from './screens/HomeScreen'
+import './index.css'
 
 const App = () => {
   return (
     <>
-      <h1>Wellcome to Proshop!</h1>
+      <Header />
+      <main className="main">
+        <Container>
+          <HomeScreen />
+        </Container>
+      </main>
+      <Footer />
     </>
   )
 }
