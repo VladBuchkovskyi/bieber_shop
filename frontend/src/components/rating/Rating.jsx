@@ -13,7 +13,7 @@ const Rating = ({ value, text }) => {
   return (
     <div className="rating">
       {ratingValues.map((val) => (
-        <span>
+        <span key={val.full}>
           <i
             style={{ color: '#f8e825' }}
             className={
